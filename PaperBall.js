@@ -3,6 +3,7 @@ constructor(x,y,Radius){
 var option ={
     isStatic:false,
   restitution:0.3,
+  friction:0.8,
    density:1.2
 }
 this.body=Bodies.circle(x,y,Radius,option);
