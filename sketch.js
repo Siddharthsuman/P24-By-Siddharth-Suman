@@ -32,25 +32,27 @@ function setup() {
 
 
 function draw() {
-	background(0);
+	background(100,19,300);
 	Engine.update(engine); 
 	 rectMode(CENTER);
+	 paperBall.display();
  ground.display();
  dustbin1.display();
  dustbin2.display();
  dustbin3.display();
-  paperBall.display();
+  
   drawSprites();
-  keyPressed();
+ // keyPressed();
  
 }
+
+
+
 function keyPressed(){
 	if (keyCode === UP_ARROW){
-        Matter.Body.applyForce(paperBall.body,paperBall.body.position,{x:5,y:-35})
+        Matter.Body.applyForce(paperBall.body,paperBall.body.position,{x:380,y:-380});
 }
-
 }
-
 
 
 
